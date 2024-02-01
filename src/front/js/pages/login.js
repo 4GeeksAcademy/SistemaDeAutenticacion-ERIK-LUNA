@@ -17,7 +17,9 @@ export const Login = () => {
         <div style={{ width: "50%", margin: "0 auto" }} className="d-flex align-items-center vh-40">
             {store.auth === true ? <Navigate to="/private"/>:
             <form onSubmit={sendData} className="container my-4">
-            <h1>Login</h1>
+            <div className="d-flex justify-content-center align-items-center">
+                <h1>LOGIN</h1>
+            </div>
             <div className="form-group bg-light p-3">
                 <label className="mt-2" htmlFor="exampleInputEmail1">EMAIL ADDRESS</label>
                 <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} className="form-control mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
